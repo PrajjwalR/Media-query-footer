@@ -18,7 +18,7 @@
         }
 
         .main-container {
-            background-color: rgb(68, 0, 255);
+            /* background-color: rgb(68, 0, 255); */
             bottom: 0;
             position: absolute;
         }
@@ -88,6 +88,32 @@
         .column a:hover {
             text-decoration: underline;
         }
+        @media screen and (max-width: 800px) {
+       .sub-container{
+        display: flex;
+        flex-flow: column-reverse;
+       }
+       .logo-container{
+        width: 100%;
+       }
+       .footer-links{
+        width: 100%;
+       }
+        }
+
+         @media screen and (max-width: 480px) {
+       .main-container{
+        display: flex;
+        flex-flow: column-reverse;
+       }
+       .logo-container{
+        width: 100%;
+       }
+       .footer-links{
+        width: 100%;
+       }
+        }
+        
     </style>
 </head>
 
